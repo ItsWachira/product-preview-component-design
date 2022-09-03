@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.main-container{
+    background-color: white;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    margin: 200px auto;
+    display: flex;
+}
+.image-wrapper  {
+    width: 300px;
+    height:450px;
+
+}
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.content-wrapper{
+    width: 50%;
+    height: 100%;
+    margin-left:14px;
+}
+.content{
+    padding: 25px 25px;
+    width: 95%;
+
+
+}
+header{
+    color: hsl(228, 12%, 48%);
+    font-size: 1.3rem;
+    font-family:  Fraunces, sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+h1{
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.costs{
+    display: flex;
+    margin-bottom: 25px;
+
+
+}
+.cost-A{
+    color:  hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-weight: 700;
+}
+.cost-B{
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    padding-top: 7px;
+    padding-left: 35px;
+    font-weight: 500;
+    text-decoration: line-through;
+
+}
+.content a{
+    display: flex;
+    padding: 15px 40px;
+    color:#fff;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    text-decoration: none;
+
+
+
+}
+.content a img{
+    margin-left: 20px;
+
+}
+
+@media screen and (max-width: 500px){
+    .main-container{
+        width: 400px;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    .image-wrapper{
+        width: 100%;
+        height: 50%;
+    }
+    .image-wrapper img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .content-wrapper{
+        width: 100%;
+        height: 50%;
+        margin-left:0;
+    }
+    .content{
+        width: 90%;
+    }
+    .costs{
+        margin-left: 10px;
+    }
+    .content a{
+        width: 80%;
+        margin-left: 10px;
+    }
+    .content a img{
+        margin-left: 0;
+    }
+}
